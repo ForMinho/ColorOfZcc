@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5856D181D2C18F9058CC12BB /* libPods-ColorOfZCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B94FFE91C849F1133B3054 /* libPods-ColorOfZCC.a */; };
+		AA47AD4F1E288170005AD1AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD4E1E288170005AD1AA /* main.m */; };
+		AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD511E288170005AD1AA /* ZCCAppDelegate.m */; };
+		AA47AD551E288170005AD1AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD541E288170005AD1AA /* ViewController.m */; };
+		AA47AD581E288170005AD1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA47AD561E288170005AD1AA /* Main.storyboard */; };
+		AA47AD5D1E288170005AD1AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA47AD5B1E288170005AD1AA /* LaunchScreen.storyboard */; };
+		AA47AD661E28B7FC005AD1AA /* ZCCEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD651E28B7FC005AD1AA /* ZCCEditPhotoViewController.m */; };
+		AA47AD6A1E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD691E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m */; };
+		AA47AD6D1E28B962005AD1AA /* ZCCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD6C1E28B962005AD1AA /* ZCCBaseViewController.m */; };
+		AA47AD701E28BA54005AD1AA /* ZCCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD6F1E28BA54005AD1AA /* ZCCBaseTabBarViewController.m */; };
+		AA47AD751E28BD18005AD1AA /* ZCCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD741E28BD18005AD1AA /* ZCCMineViewController.m */; };
+		AA94D1141E28CB5C00ABF1D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA94D1131E28CB5C00ABF1D3 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7042BF3973362A3BC80B4569 /* Pods-ColorOfZCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorOfZCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC.release.xcconfig"; sourceTree = "<group>"; };
+		8B310DB6967144BC9B3A4C81 /* Pods-ColorOfZCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorOfZCC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC.debug.xcconfig"; sourceTree = "<group>"; };
+		AA47AD4A1E288170005AD1AA /* ColorOfZCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfZCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA47AD4E1E288170005AD1AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA47AD501E288170005AD1AA /* ZCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCAppDelegate.h; sourceTree = "<group>"; };
+		AA47AD511E288170005AD1AA /* ZCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCAppDelegate.m; sourceTree = "<group>"; };
+		AA47AD531E288170005AD1AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA47AD541E288170005AD1AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA47AD571E288170005AD1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA47AD5C1E288170005AD1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA47AD5E1E288170005AD1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA47AD641E28B7FC005AD1AA /* ZCCEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCCEditPhotoViewController.h; path = ../ZCCEditPhotoViewController.h; sourceTree = "<group>"; };
+		AA47AD651E28B7FC005AD1AA /* ZCCEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCCEditPhotoViewController.m; path = ../ZCCEditPhotoViewController.m; sourceTree = "<group>"; };
+		AA47AD681E28B8EB005AD1AA /* ZCCBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCBaseNavigationViewController.h; sourceTree = "<group>"; };
+		AA47AD691E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCBaseNavigationViewController.m; sourceTree = "<group>"; };
+		AA47AD6B1E28B962005AD1AA /* ZCCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCBaseViewController.h; sourceTree = "<group>"; };
+		AA47AD6C1E28B962005AD1AA /* ZCCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCBaseViewController.m; sourceTree = "<group>"; };
+		AA47AD6E1E28BA54005AD1AA /* ZCCBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCBaseTabBarViewController.h; sourceTree = "<group>"; };
+		AA47AD6F1E28BA54005AD1AA /* ZCCBaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCBaseTabBarViewController.m; sourceTree = "<group>"; };
+		AA47AD731E28BD18005AD1AA /* ZCCMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCMineViewController.h; sourceTree = "<group>"; };
+		AA47AD741E28BD18005AD1AA /* ZCCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCMineViewController.m; sourceTree = "<group>"; };
+		AA94D1121E28C39D00ABF1D3 /* ZCCCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCCommonDefine.h; sourceTree = "<group>"; };
+		AA94D1131E28CB5C00ABF1D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2B94FFE91C849F1133B3054 /* libPods-ColorOfZCC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorOfZCC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA47AD471E288170005AD1AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5856D181D2C18F9058CC12BB /* libPods-ColorOfZCC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D813F92950476AA85E70455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B94FFE91C849F1133B3054 /* libPods-ColorOfZCC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA47AD411E288170005AD1AA = {
+			isa = PBXGroup;
+			children = (
+				AA47AD671E28B8A2005AD1AA /* Base */,
+				AA47AD4C1E288170005AD1AA /* ColorOfZCC */,
+				AA47AD4B1E288170005AD1AA /* Products */,
+				BEEC9045330B68CF06EFBC6D /* Pods */,
+				6D813F92950476AA85E70455 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA47AD4B1E288170005AD1AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA47AD4A1E288170005AD1AA /* ColorOfZCC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA47AD4C1E288170005AD1AA /* ColorOfZCC */ = {
+			isa = PBXGroup;
+			children = (
+				AA47AD721E28BC8D005AD1AA /* EditPhoto */,
+				AA47AD711E28BC73005AD1AA /* Mine */,
+				AA47AD501E288170005AD1AA /* ZCCAppDelegate.h */,
+				AA47AD511E288170005AD1AA /* ZCCAppDelegate.m */,
+				AA47AD531E288170005AD1AA /* ViewController.h */,
+				AA47AD541E288170005AD1AA /* ViewController.m */,
+				AA47AD561E288170005AD1AA /* Main.storyboard */,
+				AA47AD5B1E288170005AD1AA /* LaunchScreen.storyboard */,
+				AA47AD5E1E288170005AD1AA /* Info.plist */,
+				AA94D1131E28CB5C00ABF1D3 /* Images.xcassets */,
+				AA47AD4D1E288170005AD1AA /* Supporting Files */,
+			);
+			path = ColorOfZCC;
+			sourceTree = "<group>";
+		};
+		AA47AD4D1E288170005AD1AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA47AD4E1E288170005AD1AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA47AD671E28B8A2005AD1AA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AA94D1121E28C39D00ABF1D3 /* ZCCCommonDefine.h */,
+				AA47AD6B1E28B962005AD1AA /* ZCCBaseViewController.h */,
+				AA47AD6C1E28B962005AD1AA /* ZCCBaseViewController.m */,
+				AA47AD681E28B8EB005AD1AA /* ZCCBaseNavigationViewController.h */,
+				AA47AD691E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m */,
+				AA47AD6E1E28BA54005AD1AA /* ZCCBaseTabBarViewController.h */,
+				AA47AD6F1E28BA54005AD1AA /* ZCCBaseTabBarViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AA47AD711E28BC73005AD1AA /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AA47AD731E28BD18005AD1AA /* ZCCMineViewController.h */,
+				AA47AD741E28BD18005AD1AA /* ZCCMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AA47AD721E28BC8D005AD1AA /* EditPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				AA47AD641E28B7FC005AD1AA /* ZCCEditPhotoViewController.h */,
+				AA47AD651E28B7FC005AD1AA /* ZCCEditPhotoViewController.m */,
+			);
+			path = EditPhoto;
+			sourceTree = "<group>";
+		};
+		BEEC9045330B68CF06EFBC6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B310DB6967144BC9B3A4C81 /* Pods-ColorOfZCC.debug.xcconfig */,
+				7042BF3973362A3BC80B4569 /* Pods-ColorOfZCC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA47AD491E288170005AD1AA /* ColorOfZCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA47AD611E288170005AD1AA /* Build configuration list for PBXNativeTarget "ColorOfZCC" */;
+			buildPhases = (
+				5900571B800FEA7D5771B6E7 /* [CP] Check Pods Manifest.lock */,
+				AA47AD461E288170005AD1AA /* Sources */,
+				AA47AD471E288170005AD1AA /* Frameworks */,
+				AA47AD481E288170005AD1AA /* Resources */,
+				22B23B4C68B15DEF22923697 /* [CP] Embed Pods Frameworks */,
+				63D9F38AFA25A5176189194A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorOfZCC;
+			productName = ColorOfZCC;
+			productReference = AA47AD4A1E288170005AD1AA /* ColorOfZCC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA47AD421E288170005AD1AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = For_Minho;
+				TargetAttributes = {
+					AA47AD491E288170005AD1AA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L39V2FNSCY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AA47AD451E288170005AD1AA /* Build configuration list for PBXProject "ColorOfZCC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA47AD411E288170005AD1AA;
+			productRefGroup = AA47AD4B1E288170005AD1AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA47AD491E288170005AD1AA /* ColorOfZCC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA47AD481E288170005AD1AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA94D1141E28CB5C00ABF1D3 /* Images.xcassets in Resources */,
+				AA47AD5D1E288170005AD1AA /* LaunchScreen.storyboard in Resources */,
+				AA47AD581E288170005AD1AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22B23B4C68B15DEF22923697 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5900571B800FEA7D5771B6E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63D9F38AFA25A5176189194A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA47AD461E288170005AD1AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA47AD6D1E28B962005AD1AA /* ZCCBaseViewController.m in Sources */,
+				AA47AD551E288170005AD1AA /* ViewController.m in Sources */,
+				AA47AD751E28BD18005AD1AA /* ZCCMineViewController.m in Sources */,
+				AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */,
+				AA47AD701E28BA54005AD1AA /* ZCCBaseTabBarViewController.m in Sources */,
+				AA47AD661E28B7FC005AD1AA /* ZCCEditPhotoViewController.m in Sources */,
+				AA47AD6A1E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m in Sources */,
+				AA47AD4F1E288170005AD1AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA47AD561E288170005AD1AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA47AD571E288170005AD1AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA47AD5B1E288170005AD1AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA47AD5C1E288170005AD1AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA47AD5F1E288170005AD1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA47AD601E288170005AD1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA47AD621E288170005AD1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B310DB6967144BC9B3A4C81 /* Pods-ColorOfZCC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L39V2FNSCY;
+				INFOPLIST_FILE = ColorOfZCC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cindy.ColorOfZCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA47AD631E288170005AD1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7042BF3973362A3BC80B4569 /* Pods-ColorOfZCC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L39V2FNSCY;
+				INFOPLIST_FILE = ColorOfZCC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cindy.ColorOfZCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA47AD451E288170005AD1AA /* Build configuration list for PBXProject "ColorOfZCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA47AD5F1E288170005AD1AA /* Debug */,
+				AA47AD601E288170005AD1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA47AD611E288170005AD1AA /* Build configuration list for PBXNativeTarget "ColorOfZCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA47AD621E288170005AD1AA /* Debug */,
+				AA47AD631E288170005AD1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA47AD421E288170005AD1AA /* Project object */;
+}
