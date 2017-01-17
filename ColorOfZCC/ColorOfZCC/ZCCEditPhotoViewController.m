@@ -76,4 +76,8 @@
     panGesture.view.center = CGPointMake(panGesture.view.center.x + point.x, panGesture.view.center.y + point.y);
     [panGesture setTranslation:CGPointMake(0, 0) inView:self.view];
 }
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+}
 @end
