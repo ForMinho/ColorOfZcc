@@ -19,7 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     ZCCBaseTabBarViewController *tabBarViewCon = [ZCCBaseTabBarViewController ZCCBaseTabBarViewController];
-//    
+//
+//    ZCCBaseTabBarViewController *tabBarViewCon = [[ZCCBaseTabBarViewController alloc] init];
+    
     [self.window setRootViewController:tabBarViewCon];
     [self.window makeKeyWindow];
     

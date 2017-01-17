@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5856D181D2C18F9058CC12BB /* libPods-ColorOfZCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B94FFE91C849F1133B3054 /* libPods-ColorOfZCC.a */; };
+		AA07A0FF1E2DBD1A00872469 /* ZCCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA07A0FE1E2DBD1A00872469 /* ZCCImageView.m */; };
+		AA07A1021E2DC5D600872469 /* ZCCEditBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA07A1011E2DC5D600872469 /* ZCCEditBackGroundView.m */; };
+		AA2B40FF1E2C730A00492E91 /* IMG_1195.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AA2B40FD1E2C730A00492E91 /* IMG_1195.JPG */; };
+		AA2B41001E2C730A00492E91 /* IMG_1719.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AA2B40FE1E2C730A00492E91 /* IMG_1719.JPG */; };
+		AA3791511E2DF94A0032921D /* ZCCEditBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3791501E2DF94A0032921D /* ZCCEditBaseView.m */; };
 		AA47AD4F1E288170005AD1AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD4E1E288170005AD1AA /* main.m */; };
 		AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD511E288170005AD1AA /* ZCCAppDelegate.m */; };
 		AA47AD551E288170005AD1AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD541E288170005AD1AA /* ViewController.m */; };
@@ -24,6 +29,14 @@
 /* Begin PBXFileReference section */
 		7042BF3973362A3BC80B4569 /* Pods-ColorOfZCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorOfZCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC.release.xcconfig"; sourceTree = "<group>"; };
 		8B310DB6967144BC9B3A4C81 /* Pods-ColorOfZCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorOfZCC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorOfZCC/Pods-ColorOfZCC.debug.xcconfig"; sourceTree = "<group>"; };
+		AA07A0FD1E2DBD1A00872469 /* ZCCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCImageView.h; sourceTree = "<group>"; };
+		AA07A0FE1E2DBD1A00872469 /* ZCCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCImageView.m; sourceTree = "<group>"; };
+		AA07A1001E2DC5D600872469 /* ZCCEditBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCEditBackGroundView.h; sourceTree = "<group>"; };
+		AA07A1011E2DC5D600872469 /* ZCCEditBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCEditBackGroundView.m; sourceTree = "<group>"; };
+		AA2B40FD1E2C730A00492E91 /* IMG_1195.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1195.JPG; sourceTree = "<group>"; };
+		AA2B40FE1E2C730A00492E91 /* IMG_1719.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1719.JPG; sourceTree = "<group>"; };
+		AA37914F1E2DF94A0032921D /* ZCCEditBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCEditBaseView.h; sourceTree = "<group>"; };
+		AA3791501E2DF94A0032921D /* ZCCEditBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCEditBaseView.m; sourceTree = "<group>"; };
 		AA47AD4A1E288170005AD1AA /* ColorOfZCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfZCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA47AD4E1E288170005AD1AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA47AD501E288170005AD1AA /* ZCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCAppDelegate.h; sourceTree = "<group>"; };
@@ -68,9 +81,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA07A0FC1E2DBCCD00872469 /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				AA37914F1E2DF94A0032921D /* ZCCEditBaseView.h */,
+				AA3791501E2DF94A0032921D /* ZCCEditBaseView.m */,
+				AA07A0FD1E2DBD1A00872469 /* ZCCImageView.h */,
+				AA07A0FE1E2DBD1A00872469 /* ZCCImageView.m */,
+				AA07A1001E2DC5D600872469 /* ZCCEditBackGroundView.h */,
+				AA07A1011E2DC5D600872469 /* ZCCEditBackGroundView.m */,
+			);
+			name = EditView;
+			path = ../EditView;
+			sourceTree = "<group>";
+		};
+		AA2B40FC1E2C72E200492E91 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B40FD1E2C730A00492E91 /* IMG_1195.JPG */,
+				AA2B40FE1E2C730A00492E91 /* IMG_1719.JPG */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		AA47AD411E288170005AD1AA = {
 			isa = PBXGroup;
 			children = (
+				AA2B40FC1E2C72E200492E91 /* Image */,
 				AA47AD671E28B8A2005AD1AA /* Base */,
 				AA47AD4C1E288170005AD1AA /* ColorOfZCC */,
 				AA47AD4B1E288170005AD1AA /* Products */,
@@ -99,7 +136,6 @@
 				AA47AD561E288170005AD1AA /* Main.storyboard */,
 				AA47AD5B1E288170005AD1AA /* LaunchScreen.storyboard */,
 				AA47AD5E1E288170005AD1AA /* Info.plist */,
-				AA94D1131E28CB5C00ABF1D3 /* Images.xcassets */,
 				AA47AD4D1E288170005AD1AA /* Supporting Files */,
 			);
 			path = ColorOfZCC;
@@ -108,6 +144,7 @@
 		AA47AD4D1E288170005AD1AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA94D1131E28CB5C00ABF1D3 /* Images.xcassets */,
 				AA47AD4E1E288170005AD1AA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +176,7 @@
 		AA47AD721E28BC8D005AD1AA /* EditPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				AA07A0FC1E2DBCCD00872469 /* EditView */,
 				AA47AD641E28B7FC005AD1AA /* ZCCEditPhotoViewController.h */,
 				AA47AD651E28B7FC005AD1AA /* ZCCEditPhotoViewController.m */,
 			);
@@ -219,6 +257,8 @@
 				AA94D1141E28CB5C00ABF1D3 /* Images.xcassets in Resources */,
 				AA47AD5D1E288170005AD1AA /* LaunchScreen.storyboard in Resources */,
 				AA47AD581E288170005AD1AA /* Main.storyboard in Resources */,
+				AA2B41001E2C730A00492E91 /* IMG_1719.JPG in Resources */,
+				AA2B40FF1E2C730A00492E91 /* IMG_1195.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,13 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA47AD6D1E28B962005AD1AA /* ZCCBaseViewController.m in Sources */,
+				AA07A1021E2DC5D600872469 /* ZCCEditBackGroundView.m in Sources */,
 				AA47AD551E288170005AD1AA /* ViewController.m in Sources */,
 				AA47AD751E28BD18005AD1AA /* ZCCMineViewController.m in Sources */,
+				AA07A0FF1E2DBD1A00872469 /* ZCCImageView.m in Sources */,
 				AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */,
 				AA47AD701E28BA54005AD1AA /* ZCCBaseTabBarViewController.m in Sources */,
 				AA47AD661E28B7FC005AD1AA /* ZCCEditPhotoViewController.m in Sources */,
 				AA47AD6A1E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m in Sources */,
 				AA47AD4F1E288170005AD1AA /* main.m in Sources */,
+				AA3791511E2DF94A0032921D /* ZCCEditBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +451,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L39V2FNSCY;
 				INFOPLIST_FILE = ColorOfZCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cindy.ColorOfZCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +466,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L39V2FNSCY;
 				INFOPLIST_FILE = ColorOfZCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cindy.ColorOfZCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

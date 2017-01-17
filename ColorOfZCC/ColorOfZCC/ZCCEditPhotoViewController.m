@@ -7,8 +7,17 @@
 //
 
 #import "ZCCEditPhotoViewController.h"
+#import "ZCCImageView.h"
+#import "ZCCCommonDefine.h"
+#import "Masonry.h"
 
-@interface ZCCEditPhotoViewController ()
+#define ZCCEditPhotoView_BasePhoto_Tag 1000
+@interface ZCCEditPhotoViewController ()<ZCCImageViewDegelate>
+{
+    CGPoint beginPoint;
+}
+@property (nonatomic, strong) NSMutableSet *photoSet;
+@property (nonatomic, strong) ZCCEditBaseView *touchView;
 
 @end
 
@@ -16,23 +25,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.title = @"编辑";
-    // Do any additional setup after loading the view.
+    self.title = @"编辑";
+    [self createNavigationButton];
 }
 
+-(void)createNavigationButton
+{
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addPhotoOnView)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -- click
+- (void)addPhotoOnView
+{
+    ZCCImageView *photoView = [ZCCImageView ZCCImageViewWithPhoto:@"IMG_1195.JPG" withSize:CGSizeMake(150, 150)];
+    [self.view addSubview:photoView];
+    [photoView mas_makeConstraints:^(MASConstraintMaker *maker)
+    {
+        maker.size.mas_equalTo(CGSizeMake(150, 150));
+        maker.top.mas_equalTo(100);
+        maker.left.mas_equalTo(50);
+    }];
+    [photoView ZCCUpdateConstraints:CGSizeMake(150, 150)];
+    photoView.tag = ZCCEditPhotoView_BasePhoto_Tag + self.photoSet.count;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectPhotoView:)];
+    [photoView addGestureRecognizer:tapGesture];
+    photoView.delegate = self;
+    [self.photoSet addObject:photoView];
 }
-*/
-
+- (void)selectPhotoView:(UITapGestureRecognizer *)gesture
+{
+    ZCCImageView *imageView = (ZCCImageView *)gesture.view;
+    [imageView imageViewGestrueRecognizer];
+}
+#pragma mark --
+- (NSMutableSet *)photoSet
+{
+    if (_photoSet == nil) {
+        _photoSet = [[NSMutableSet alloc] init];
+    }
+    return _photoSet;
+}
+#pragma mark --
+- (void)hanlePanGestureRecognize:(UIPanGestureRecognizer *)panGesture{
+    CGPoint point = [panGesture translationInView:self.view];
+    panGesture.view.center = CGPointMake(panGesture.view.center.x + point.x, panGesture.view.center.y + point.y);
+    [panGesture setTranslation:CGPointMake(0, 0) inView:self.view];
+}
 @end

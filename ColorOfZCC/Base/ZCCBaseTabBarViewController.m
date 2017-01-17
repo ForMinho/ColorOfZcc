@@ -23,8 +23,6 @@
     static ZCCBaseTabBarViewController *baseTabBarViewController = nil;
     dispatch_once(&once, ^{
         baseTabBarViewController = [[ZCCBaseTabBarViewController alloc] init];
-        [baseTabBarViewController createNavigationViewControllers];
-        
     });
     return baseTabBarViewController;
 }
@@ -32,7 +30,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColorFromRGB(0xFFFFFF);
-//    self.tabBar.barTintColor = UIColorFromRGB(0xFFFFFF);
+    self.tabBar.barTintColor = UIColorFromRGB(0xFFB5C5);
+    [self createNavigationViewControllers];
+
     
 }
 
@@ -44,35 +44,33 @@
 #pragma mark -- createNavigationController
 - (void)createNavigationViewControllers
 {
-    ZCCBaseNavigationViewController *editPhotoNaviCon = [ZCCBaseNavigationViewController ZCCBaseNavigationViewControllerWithRootViewController:[[ZCCEditPhotoViewController alloc]init]];
-    ZCCBaseNavigationViewController *mineNaviCon = [ZCCBaseNavigationViewController ZCCBaseNavigationViewControllerWithRootViewController:[[ZCCMineViewController alloc] init]];
-    
-    [self setViewControllers:@[editPhotoNaviCon,mineNaviCon]];
-    
-    NSArray *tabSetArray = @[@{@"title":@"主页",
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+    NSArray *tabSetArray = @[@{@"class":@"ZCCEditPhotoViewController",
+                               @"title":@"主页",
                                @"defaultImage":@"tab_daily_collocation",
                                @"selectImage":@"tab_daily_collocation_select"},
-                             @{@"title":@"我",
+                             @{@"class":@"ZCCMineViewController",
+                               @"title":@"我",
                                @"defaultImage":@"tab_personal_center",
-                               @"selectImage":@"tab_personal_center_select"},
-                             @{@"title":@"主页",
-                               @"defaultImage":@"tab_daily_collocation",
-                               @"selectImage":@"tab_daily_collocation_select"},
-                             @{@"title":@"主页",
-                               @"defaultImage":@"tab_daily_collocation",
-                               @"selectImage":@"tab_daily_collocation_select"}
-                            
+                               @"selectImage":@"tab_personal_center_select"}
                              ];
-    UITabBar *tabBar = self.tabBar;
-    [tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *tabBarItem,NSUInteger index,BOOL *stop){
-        NSDictionary *tempInfoDic = tabSetArray[index];
-        tabBarItem.title = tempInfoDic[@"title"];
-//        tabBarItem.image = IMAGE(tempInfoDic[@"defaultImage"]);
-//        tabBarItem.selectedImage = IMAGE(tempInfoDic[@"selectImage"]);
-        [tabBarItem setImage:tempInfoDic[@"defaultImage"]];
-//        tabBarItem setSelectedImage:<#(UIImage * _Nullable)#>
-    }];
-  
+    NSMutableArray *tabBarItemArr = [NSMutableArray array];
+    
+    for (NSDictionary *tmpDic in tabSetArray) {
+        ZCCBaseNavigationViewController *baseCon = [self createBaseNavigationControllerWithItem:tmpDic];
+        [tabBarItemArr addObject:baseCon];
+    }
+    self.viewControllers = [NSArray arrayWithArray:tabBarItemArr];
 }
-
+- (ZCCBaseNavigationViewController *)createBaseNavigationControllerWithItem:(NSDictionary *)itemDic
+{
+    
+    UIViewController *viewController = [[NSClassFromString(itemDic[@"class"]) alloc] init];
+    ZCCBaseNavigationViewController *navigationController = [ZCCBaseNavigationViewController ZCCBaseNavigationViewControllerWithRootViewController:viewController];
+    UITabBarItem *tabItem = [[UITabBarItem alloc] initWithTitle:itemDic[@"title"] image:ASSETSIMAGE(itemDic[@"defaultImage"]) selectedImage:ASSETSIMAGE(itemDic[@"selectImage"])];
+    [tabItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    navigationController.tabBarItem = tabItem;
+    
+    return navigationController;
+}
 @end
