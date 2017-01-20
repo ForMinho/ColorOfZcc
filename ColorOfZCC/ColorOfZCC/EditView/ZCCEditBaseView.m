@@ -9,6 +9,12 @@
 #import "ZCCEditBaseView.h"
 
 @implementation ZCCEditBaseView
-
-
+-(void)dismissSelected
+{
+    
+}
+- (void)deletePhotoViewFromWindow
+{
+    
+}
 @end

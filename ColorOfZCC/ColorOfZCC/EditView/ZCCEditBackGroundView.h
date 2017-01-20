@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "ZCCEditBaseView.h"
 @interface ZCCEditBackGroundView : ZCCEditBaseView
-@property (nonatomic, assign) CGRect viewReact;
+//@property (nonatomic, assign) CGRect viewReact;
 @end

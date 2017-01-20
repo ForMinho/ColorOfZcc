@@ -14,7 +14,7 @@
 #define ZCCEditPhotoView_BasePhoto_Tag 1000
 @interface ZCCEditPhotoViewController ()<ZCCImageViewDegelate>
 {
-    CGPoint beginPoint;
+//    CGPoint beginPoint;
 }
 @property (nonatomic, strong) NSMutableSet *photoSet;
 @property (nonatomic, strong) ZCCEditBaseView *touchView;
@@ -50,7 +50,6 @@
         maker.top.mas_equalTo(100);
         maker.left.mas_equalTo(50);
     }];
-    [photoView ZCCUpdateConstraints:CGSizeMake(150, 150)];
     photoView.tag = ZCCEditPhotoView_BasePhoto_Tag + self.photoSet.count;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectPhotoView:)];
     [photoView addGestureRecognizer:tapGesture];
@@ -61,6 +60,7 @@
 {
     ZCCImageView *imageView = (ZCCImageView *)gesture.view;
     [imageView imageViewGestrueRecognizer];
+    _touchView = imageView;
 }
 #pragma mark --
 - (NSMutableSet *)photoSet
@@ -75,9 +75,27 @@
     CGPoint point = [panGesture translationInView:self.view];
     panGesture.view.center = CGPointMake(panGesture.view.center.x + point.x, panGesture.view.center.y + point.y);
     [panGesture setTranslation:CGPointMake(0, 0) inView:self.view];
+    
 }
 
+#pragma mark --
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint beginPoint = [touch locationInView:self.view];
+    beginPoint = [_touchView convertPoint:beginPoint fromView:self.view ];
+    if (_touchView && ![_touchView pointInside:beginPoint withEvent:nil]) {
+        [_touchView dismissSelected];
+        _touchView = nil;
+    }
+    
+}
+- (void) touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+}
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 }
+
 @end

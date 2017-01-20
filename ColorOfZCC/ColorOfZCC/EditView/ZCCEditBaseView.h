@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ZCCCommonDefine.h"
 @interface ZCCEditBaseView : UIView
 @property (nonatomic , assign) BOOL isSelected;
+-(void)dismissSelected;
+-(void)deletePhotoViewFromWindow;
 @end

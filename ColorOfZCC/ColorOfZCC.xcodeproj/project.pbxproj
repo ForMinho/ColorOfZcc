@@ -13,6 +13,15 @@
 		AA2B40FF1E2C730A00492E91 /* IMG_1195.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AA2B40FD1E2C730A00492E91 /* IMG_1195.JPG */; };
 		AA2B41001E2C730A00492E91 /* IMG_1719.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AA2B40FE1E2C730A00492E91 /* IMG_1719.JPG */; };
 		AA3791511E2DF94A0032921D /* ZCCEditBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3791501E2DF94A0032921D /* ZCCEditBaseView.m */; };
+		AA3791781E30C6EF0032921D /* ZCCMineDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3791771E30C6EF0032921D /* ZCCMineDataModel.m */; };
+		AA37917B1E31ADC00032921D /* ZCCProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = AA37917A1E31ADC00032921D /* ZCCProduct.m */; };
+		AA3791801E31B1D90032921D /* ZCCDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = AA37917F1E31B1D90032921D /* ZCCDBAccess.m */; };
+		AA3791821E31B3C30032921D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3791811E31B3C30032921D /* libsqlite3.0.tbd */; };
+		AA3791861E31E7EC0032921D /* main.sql in Resources */ = {isa = PBXBuildFile; fileRef = AA3791851E31E7EC0032921D /* main.sql */; };
+		AA3791881E31E8420032921D /* main.db in Resources */ = {isa = PBXBuildFile; fileRef = AA3791871E31E8420032921D /* main.db */; };
+		AA37918A1E31EA8A0032921D /* main.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AA3791891E31EA8A0032921D /* main.sqlite */; };
+		AA3791911E31F1270032921D /* ZCCMineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA37918F1E31F1270032921D /* ZCCMineDetailViewController.m */; };
+		AA3791921E31F1270032921D /* ZCCMineDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3791901E31F1270032921D /* ZCCMineDetailViewController.xib */; };
 		AA47AD4F1E288170005AD1AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD4E1E288170005AD1AA /* main.m */; };
 		AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD511E288170005AD1AA /* ZCCAppDelegate.m */; };
 		AA47AD551E288170005AD1AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47AD541E288170005AD1AA /* ViewController.m */; };
@@ -37,6 +46,19 @@
 		AA2B40FE1E2C730A00492E91 /* IMG_1719.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1719.JPG; sourceTree = "<group>"; };
 		AA37914F1E2DF94A0032921D /* ZCCEditBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCEditBaseView.h; sourceTree = "<group>"; };
 		AA3791501E2DF94A0032921D /* ZCCEditBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCEditBaseView.m; sourceTree = "<group>"; };
+		AA3791761E30C6EF0032921D /* ZCCMineDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCMineDataModel.h; sourceTree = "<group>"; };
+		AA3791771E30C6EF0032921D /* ZCCMineDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCMineDataModel.m; sourceTree = "<group>"; };
+		AA3791791E31ADC00032921D /* ZCCProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCProduct.h; sourceTree = "<group>"; };
+		AA37917A1E31ADC00032921D /* ZCCProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCProduct.m; sourceTree = "<group>"; };
+		AA37917E1E31B1D90032921D /* ZCCDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCDBAccess.h; sourceTree = "<group>"; };
+		AA37917F1E31B1D90032921D /* ZCCDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCDBAccess.m; sourceTree = "<group>"; };
+		AA3791811E31B3C30032921D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		AA3791851E31E7EC0032921D /* main.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.sql; sourceTree = "<group>"; };
+		AA3791871E31E8420032921D /* main.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.db; sourceTree = "<group>"; };
+		AA3791891E31EA8A0032921D /* main.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.sqlite; sourceTree = "<group>"; };
+		AA37918E1E31F1270032921D /* ZCCMineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCMineDetailViewController.h; sourceTree = "<group>"; };
+		AA37918F1E31F1270032921D /* ZCCMineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCMineDetailViewController.m; sourceTree = "<group>"; };
+		AA3791901E31F1270032921D /* ZCCMineDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCCMineDetailViewController.xib; sourceTree = "<group>"; };
 		AA47AD4A1E288170005AD1AA /* ColorOfZCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfZCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA47AD4E1E288170005AD1AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA47AD501E288170005AD1AA /* ZCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCAppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3791821E31B3C30032921D /* libsqlite3.0.tbd in Frameworks */,
 				5856D181D2C18F9058CC12BB /* libPods-ColorOfZCC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +99,7 @@
 		6D813F92950476AA85E70455 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA3791811E31B3C30032921D /* libsqlite3.0.tbd */,
 				C2B94FFE91C849F1133B3054 /* libPods-ColorOfZCC.a */,
 			);
 			name = Frameworks;
@@ -104,9 +128,25 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		AA3791751E30C6950032921D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA3791761E30C6EF0032921D /* ZCCMineDataModel.h */,
+				AA3791771E30C6EF0032921D /* ZCCMineDataModel.m */,
+				AA3791791E31ADC00032921D /* ZCCProduct.h */,
+				AA37917A1E31ADC00032921D /* ZCCProduct.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		AA47AD411E288170005AD1AA = {
 			isa = PBXGroup;
 			children = (
+				AA3791871E31E8420032921D /* main.db */,
+				AA37917E1E31B1D90032921D /* ZCCDBAccess.h */,
+				AA3791891E31EA8A0032921D /* main.sqlite */,
+				AA37917F1E31B1D90032921D /* ZCCDBAccess.m */,
+				AA3791851E31E7EC0032921D /* main.sql */,
 				AA2B40FC1E2C72E200492E91 /* Image */,
 				AA47AD671E28B8A2005AD1AA /* Base */,
 				AA47AD4C1E288170005AD1AA /* ColorOfZCC */,
@@ -167,8 +207,12 @@
 		AA47AD711E28BC73005AD1AA /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				AA3791751E30C6950032921D /* DataModel */,
 				AA47AD731E28BD18005AD1AA /* ZCCMineViewController.h */,
 				AA47AD741E28BD18005AD1AA /* ZCCMineViewController.m */,
+				AA37918E1E31F1270032921D /* ZCCMineDetailViewController.h */,
+				AA37918F1E31F1270032921D /* ZCCMineDetailViewController.m */,
+				AA3791901E31F1270032921D /* ZCCMineDetailViewController.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -254,9 +298,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA37918A1E31EA8A0032921D /* main.sqlite in Resources */,
 				AA94D1141E28CB5C00ABF1D3 /* Images.xcassets in Resources */,
 				AA47AD5D1E288170005AD1AA /* LaunchScreen.storyboard in Resources */,
+				AA3791921E31F1270032921D /* ZCCMineDetailViewController.xib in Resources */,
 				AA47AD581E288170005AD1AA /* Main.storyboard in Resources */,
+				AA3791881E31E8420032921D /* main.db in Resources */,
+				AA3791861E31E7EC0032921D /* main.sql in Resources */,
 				AA2B41001E2C730A00492E91 /* IMG_1719.JPG in Resources */,
 				AA2B40FF1E2C730A00492E91 /* IMG_1195.JPG in Resources */,
 			);
@@ -318,15 +366,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA47AD6D1E28B962005AD1AA /* ZCCBaseViewController.m in Sources */,
+				AA3791781E30C6EF0032921D /* ZCCMineDataModel.m in Sources */,
 				AA07A1021E2DC5D600872469 /* ZCCEditBackGroundView.m in Sources */,
 				AA47AD551E288170005AD1AA /* ViewController.m in Sources */,
+				AA37917B1E31ADC00032921D /* ZCCProduct.m in Sources */,
 				AA47AD751E28BD18005AD1AA /* ZCCMineViewController.m in Sources */,
+				AA3791911E31F1270032921D /* ZCCMineDetailViewController.m in Sources */,
 				AA07A0FF1E2DBD1A00872469 /* ZCCImageView.m in Sources */,
 				AA47AD521E288170005AD1AA /* ZCCAppDelegate.m in Sources */,
 				AA47AD701E28BA54005AD1AA /* ZCCBaseTabBarViewController.m in Sources */,
 				AA47AD661E28B7FC005AD1AA /* ZCCEditPhotoViewController.m in Sources */,
 				AA47AD6A1E28B8EB005AD1AA /* ZCCBaseNavigationViewController.m in Sources */,
 				AA47AD4F1E288170005AD1AA /* main.m in Sources */,
+				AA3791801E31B1D90032921D /* ZCCDBAccess.m in Sources */,
 				AA3791511E2DF94A0032921D /* ZCCEditBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,10 +30,11 @@
 {
     self = [super init];
     if (self) {
+//        self.backgroundColor = [UIColor grayColor];
         self.frame = CGRectMake(0, 0, size.width, size.height);
         self.isSelected = NO;
-        [self createEditAndLineView];
         [self createZCCImageViewWithImage:image];
+        [self createEditAndLineView];
     }
     return self;
 }
@@ -43,20 +44,20 @@
     [self addSubview:_imageView];
     [_imageView mas_makeConstraints:^(MASConstraintMaker *make)
      {
-         make.width.and.height.mas_equalTo(CGSizeMake(CGRectGetWidth(self.frame) - 2, CGRectGetHeight(self.frame) - 2));
-         make.top.and.left.mas_equalTo(1);
+         make.width.and.height.mas_equalTo(CGSizeMake(CGRectGetWidth(self.frame) - 50, CGRectGetHeight(self.frame) - 50));
+         make.top.and.left.mas_equalTo(25);
      }];
-    [self bringSubviewToFront:_imageView];
+//    [self bringSubviewToFront:_imageView];
 }
 - (void)imageViewGestrueRecognizer
 {
     NSLog(@"%@__%@",NSStringFromClass(self.class),NSStringFromSelector(_cmd));
-    self.isSelected  = self.lineView.isSelected = YES;
+    self.isSelected  = YES;
     self.lineView.hidden = NO;
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(ZCCPanGestureRecognizer:)];
     [self addGestureRecognizer:panGesture];
 }
--(void)dismissSelectedPhotoView
+-(void)dismissSelected
 {
     self.isSelected = NO;
     self.lineView.hidden = YES;
@@ -77,7 +78,10 @@
 #pragma mark -- private
 - (void)ZCCPanGestureRecognizer:(UIPanGestureRecognizer *)panGesture
 {
-    [self.delegate hanlePanGestureRecognize:panGesture];
+    if (self.isSelected) {
+        [self.delegate hanlePanGestureRecognize:panGesture];
+    }
+    
 }
 
 #pragma mark --

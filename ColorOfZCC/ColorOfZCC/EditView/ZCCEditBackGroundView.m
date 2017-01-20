@@ -7,6 +7,7 @@
 //
 
 #import "ZCCEditBackGroundView.h"
+#import "masonry.h"
 @interface ZCCEditBackGroundView()
 @property (nonatomic, strong) UIButton *rateBtn;
 @end
@@ -17,6 +18,14 @@
     self = [super init ];
     if (self) {
         
+    }
+    return self;
+}
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+
     }
     return self;
 }
@@ -31,14 +40,28 @@
     CGContextSetStrokeColorWithColor(context, aColor.CGColor);//线框颜色
     aColor = [UIColor clearColor];
     CGContextSetFillColorWithColor(context, aColor.CGColor);
-    CGContextAddRect(context,self.frame);//画方框
+    CGRect drawRect = self.frame;
+    drawRect.origin.x = 24;
+    drawRect.origin.y = 24;
+    drawRect.size.height -= 48;
+    drawRect.size.width -= 48;
+    CGContextAddRect(context,drawRect);//画方框
     CGContextDrawPath(context, kCGPathFillStroke);//绘画路径
+    [self.rateBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 - (UIButton *)rateBtn
 {
     if (_rateBtn == nil) {
-        _rateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rateBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self addSubview:_rateBtn];
+        [_rateBtn mas_makeConstraints:^(MASConstraintMaker *make){
+            make.size.mas_equalTo(CGSizeMake(40, 40));
+            make.left.mas_equalTo(0);
+            make.top.mas_equalTo(0);
+        }];
+        [_rateBtn setTitle:@"X" forState:UIControlStateNormal];
+        [_rateBtn setBackgroundColor:UIColorFromRGB(0xFF6A6A)];
+        [_rateBtn addTarget:self action:@selector(deletePhotoViewFromWindow) forControlEvents:UIControlEventTouchUpInside];
     }
     return _rateBtn;
 }
